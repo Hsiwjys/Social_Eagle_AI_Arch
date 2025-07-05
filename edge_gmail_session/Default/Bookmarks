@@ -1,0 +1,219 @@
+{
+   "checksum": "09ad473b9ab8aeb499a7ee6f050e7329",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "date_added": "13336621913234318",
+            "date_last_used": "13340911694301860",
+            "guid": "207d83ef-f3fb-4e71-b5a7-769b4c40b999",
+            "id": "13",
+            "name": "Google",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://www.google.co.in/",
+            "visit_count": 0
+         }, {
+            "date_added": "13336622225978224",
+            "date_last_used": "13341254178236301",
+            "guid": "470403fe-de38-40a8-a899-440dd3c32ca4",
+            "id": "14",
+            "name": "(31) YouTube",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://www.youtube.com/",
+            "visit_count": 0
+         }, {
+            "date_added": "13336705715058812",
+            "date_last_used": "13345224125008187",
+            "guid": "45ef3be0-3884-43e1-914d-716e3fe9b6e7",
+            "id": "15",
+            "name": "Zoro - Home of Ads Free Anime Online",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://w1.zoro.se/home",
+            "visit_count": 0
+         }, {
+            "date_added": "13336707944682360",
+            "date_last_used": "0",
+            "guid": "dd7eb508-f469-4e6c-8a40-dc46fbbfbcef",
+            "id": "16",
+            "name": "My Drive - Google Drive",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://drive.google.com/drive/my-drive",
+            "visit_count": 0
+         }, {
+            "date_added": "13336751149115554",
+            "date_last_used": "13364931294674436",
+            "guid": "0d8393ab-1fa8-4bb4-bd16-0f175edb6c07",
+            "id": "17",
+            "name": "ChatGPT",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://chat.openai.com/?model=text-davinci-002-render-sha",
+            "visit_count": 0
+         }, {
+            "date_added": "13336752199832099",
+            "date_last_used": "13345803372559586",
+            "guid": "93bb4582-7e74-4129-8005-e125090e645f",
+            "id": "18",
+            "name": "Inbox (1,366) - sivaalgebra27@gmail.com - Gmail",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://mail.google.com/mail/u/0/?ogbl#inbox",
+            "visit_count": 0
+         }, {
+            "date_added": "13336761736891044",
+            "date_last_used": "13340218188400512",
+            "guid": "39c3782e-ce2d-4624-87e4-001178425e85",
+            "id": "19",
+            "name": "Inbox (41) - sivapushparaj274@gmail.com - Gmail",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://mail.google.com/mail/u/1/#inbox",
+            "visit_count": 0
+         }, {
+            "date_added": "13338142481598193",
+            "date_last_used": "0",
+            "guid": "25680207-046d-4cff-8d06-bc858802bf46",
+            "id": "20",
+            "name": "Home",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://classroom.google.com/",
+            "visit_count": 0
+         }, {
+            "date_added": "13340218097354187",
+            "date_last_used": "13340907240720594",
+            "guid": "35319533-f0c0-4b5d-a2c4-d225dce8a985",
+            "id": "21",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Inbox - hr.nexitence@gmail.com - Gmail",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://mail.google.com/mail/u/2/?ogbl#inbox",
+            "visit_count": 0
+         }, {
+            "date_added": "13334939336504102",
+            "date_last_used": "0",
+            "guid": "68796f83-9370-4f94-bacb-945bd485e125",
+            "id": "22",
+            "name": "(1976) How to install DEV C++ on Windows 11 (2023) - YouTube",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://www.youtube.com/watch?v=F9LcfFlDIJs",
+            "visit_count": 0
+         }, {
+            "date_added": "13340175530975396",
+            "date_last_used": "0",
+            "guid": "3f39a5ed-9df9-47ca-a339-307762282788",
+            "id": "23",
+            "name": "Gmail",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://mail.google.com/mail/?tab=rm&authuser=0&ogbl",
+            "visit_count": 0
+         }, {
+            "date_added": "13396025580544401",
+            "date_last_used": "0",
+            "guid": "28eb1449-5148-4912-a7ae-c8abfafd42c7",
+            "id": "8",
+            "name": "ASUS Software Portal - Exclusive technology",
+            "show_icon": false,
+            "source": "oem_preload",
+            "type": "url",
+            "url": "https://www.asus.com/Software-and-Innovations-Portal/",
+            "visit_count": 0
+         }, {
+            "date_added": "13396025580544071",
+            "date_last_used": "0",
+            "guid": "487e1fff-85d3-4590-9108-30c94202894a",
+            "id": "7",
+            "name": "MyASUS Software - Get the best from ASUS PC",
+            "show_icon": false,
+            "source": "oem_preload",
+            "type": "url",
+            "url": "https://www.asus.com/ASUS-Software/",
+            "visit_count": 0
+         }, {
+            "date_added": "13396025580540531",
+            "date_last_used": "0",
+            "guid": "c0f32b0a-ea96-406b-9780-723a61668d14",
+            "id": "6",
+            "name": "McAfee LiveSafe",
+            "show_icon": false,
+            "source": "oem_preload",
+            "type": "url",
+            "url": "https://home.mcafee.com/root/campaign.aspx?cid=247829",
+            "visit_count": 0
+         } ],
+         "date_added": "13396025580015713",
+         "date_last_used": "0",
+         "date_modified": "13396025580544401",
+         "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
+         "id": "1",
+         "name": "Favorites bar",
+         "source": "unknown",
+         "type": "folder"
+      },
+      "other": {
+         "children": [ {
+            "date_added": "13340779648069984",
+            "date_last_used": "0",
+            "guid": "c0b09dce-e703-4314-adcb-6d400f51cdb6",
+            "id": "11",
+            "name": "New Tab",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "chrome://newtab/",
+            "visit_count": 0
+         }, {
+            "date_added": "13341681598488901",
+            "date_last_used": "0",
+            "guid": "055891fa-73a5-4650-bfe2-ebedf46e9a77",
+            "id": "12",
+            "name": "Kongunadu Learning Management Systems: Log in to the site",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://kongunaduihub.com/ihub/login/index.php",
+            "visit_count": 0
+         } ],
+         "date_added": "13396025580015713",
+         "date_last_used": "0",
+         "date_modified": "13341681598488901",
+         "guid": "82b081ec-3dd3-529c-8475-ab6c344590dd",
+         "id": "2",
+         "name": "Other favorites",
+         "source": "unknown",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [  ],
+         "date_added": "13396025580015713",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "4cf2e351-0e85-532b-bb37-df045d8f8d0f",
+         "id": "3",
+         "name": "Mobile favorites",
+         "source": "unknown",
+         "type": "folder"
+      }
+   },
+   "sync_metadata": "CkEKHgiIgQISCOARodCXAQAAKg4QABgBIBYoBjAAOABAABIAKhg3V2NMd0hSYTFyOFhLVzdHL2hjZk1nPT1IA6AGDBKuAQgXEqkBChxQWjhNYkJHOVRHa1ZsSDVIUGJuTnppYjlybmc9EiQzZjM5YTVlZC05ZGY5LTQ3Y2EtYTMzOS0zMDc3NjIyODI3ODgYACACKAIw/86Whf0yOPLw/+S/MUDKypaF/TJKHG44R05LVlp5aHRvMXZEcU9MV1NIazBMejA5dz1aICIe/+9nSEFmNmU4RCtaUEU0ZnpkaVphUlJ2OWcrTGM9ZYugjNHCPgJgBRKuAQgVEqkBChwyTkNXRGNpVkthSFdUVXZHUDJyYjNyWkZ4NXc9EiQzNTMxOTUzMy1mMGMwLTRiNWQtYTJjNC1kMjI1ZGNlOGE5ODUYACACKAIwgs+Whf0yOMa//ZGtMUDDypaF/TJKHGsyU2cvbkRTY0psZHdIbnU1bm5uUk1Lc3JDQT1aICIe/714U09xUWdvTmFQZlJrUDAvU21FYURHL21mbW89ZYugjNHCPgJgBRKtAQgUEqgBChxwZElmRXJRblUxL3MyeEpWOENKcW9LbkhCajA9EiQyNTY4MDIwNy0wNDZkLTRjZmYtOGQwNi1iYzg1ODgwMmJmNDYYACACKAIwgM+Whf0yOJLwoLSlMUDCypaF/TJKHFZxVU11eTJTQWYwVG9ITEJMdlZsaVkyV1gvRT1aHyId/3prTjdJM0JPUHIzQzRTTlNvdWtVbHpnckJibz1lC1FsZ8I+AmAFEq0BCBMSqAEKHFVjOXBaeVZrSU5ycXJvOG85U0Z4LzY5ak56QT0SJDM5YzM3ODJlLWNlMmQtNDYyNC04N2U0LTAwMTE3ODQyNWU4NRgAIAIoAjD+zpaF/TI4h7/uoaAxQMHKloX9MkocS3dmK21LVlF3cW10bllhcW1wNXVHeUxmQjdjPVofIh3+V0c5UmFVZ0U3SW5IV3k5M2VVeWpWNkpsbFgwPWWLoIzRwj4CYAUSrQEIERKoAQocYWpqRXgyakE0bDNXdzlTVVdhZEE0WDBsUmc4PRIkMGQ4MzkzYWItMWZhOC00YmI0LWJkMTYtMGYxNzVlZGI2YzA3GAAgAigCMIPPloX9Mji1p+icoDFAv8qWhf0yShxYMnhMNnF5eFlZVWtyaTJxVUxaeFVaS1dMYVE9Wh8iHfsvd1JmNzJYdkR4Y1FneFV3NDBueDFTcXRRdWM9ZcAK7VjCPgJgBRKtAQgPEqgBChwyWjNVTmZNdnl3NnlUUVJXNWU0MTJXcFBsV0E9EiQ0NWVmM2JlMC0zODg0LTQzZTEtOTE0ZC03MTZlM2ZlOWI2ZTcYACACKAIw/c6Whf0yOOedk4egMUC8ypaF/TJKHG1IeVcweGI5ZmR4RldNQlFOSjA0OENQekR1Yz1aHyId7VdrZmhEdWgzZmdMeEY1M25jMDRWTTNoWVFNWT1lDK2jfsI+AmAFEq4BCBYSqQEKHFNpVjhmd2RGMXZaSzZDMnJ0ZW5iMlR2a3dXZz0SJDY4Nzk2ZjgzLTkzNzAtNGY5NC1iYWNiLTk0NWJkNDg1ZTEyNRgAIAIoAjD7zpaF/TI4i/H/5L8xQMTKloX9MkocVVJaVHN6c3pDdVIrakZqZWd6NUtSZjdTd0lrPVogIh7/3nJGV2NtKzF3NWRCcTNvRlJ5dEl6dk1MNEFkQT1lOPk5M8I+AmAFEq0BCBISqAEKHCs2QWZ0QXpHRXBBcmdpenhWVVp4WkkvT25TZz0SJDkzYmI0NTgyLTdlNzQtNDEyOS04MDA1LWUxMjUwOTBlNjQ1ZhgAIAIoAjD8zpaF/TI49LeonaAxQMDKloX9MkocVm8zQ0dZY3p4bURqRkxmemhsSjJuZXdvU0JVPVofIh39MnVuejhlZnQ3ZkFXNVBWZGRkVHA5RGxGeC9JPWWLoIzRwj4CYAUSrQEIDRKoAQocbk1ZUEdiK0tydEtKYTBrbUYzdkxGYmY5RFZjPRIkMjA3ZDgzZWYtZjNmYi00ZTcxLWI1YTctNzY5YjRjNDBiOTk5GAAgAigCMIHPloX9MjjAt5jfnzFAucqWhf0yShxRWmtmT1ZMNEtTVTFUT2Q2Rk0rYVZsdXl0SE09Wh8iHbdXekpYV3dVOG9OUmxNSW9kSEc2QmFDL3BodlE9ZRAw/+TCPgJgBRKOAQgBEokBChx5eEovNmZ2a2VjcjdrcDVFUXpCNHRXTHBkYkU9EiQ1MGIzY2RlNi03NmZlLTVlZjctYTUxNC0wNzc4MDFlZTU5OWYYACAAKAAwwayBmYQxOJGxgZmEMUCRsYGZhDFKHGFSQ1dMZ2hGOWI1SW5xS0lEdnVKL2p2UWtGYz1aAGUAAAAAwj4CYAASrQEIDBKoAQocNWRyVmh5NFQzZ0dyOE5MQngxZGZxL2I0WCtzPRIkMDU1ODkxZmEtNzNhNS00NjUwLWJmZTItZWJlZGY0NmU5YTc3GAAgACgAMMLr/+S/MTiq8f/kvzFAqvH/5L8xShw3cElUZGN1K1B2R0hqTS8xSmFiVVJyRjFWakU9Wh8iHbdQUWdRRXlrNktxVyttUkFvRmxyRDJUNmhqQnc9ZVZF6MvCPgJgBRKOAQgDEokBChxuamdEdTg4ZUNydlhwODZwRDdmSEdjcUZwODg9EiQyMDc1ZDllMS04Yjc1LTVmZmMtYmVkMC0yNDE3MTMwNDI3OGIYACAAKAAwx6yBmYQxOICzgZmEMUCAs4GZhDFKHHl6TkIwMWNuNTRBN2NSVTB1VCsvUGdtVHRVbz1aAGUAAAAAwj4CYAASrAEICxKnAQocUmhwaTlQTXM2dXBDT0RzYWsrRHZTRjYxYmp3PRIkYzBiMDlkY2UtZTcwMy00MzE0LWFkY2ItNmQ0MDBmNTFjZGI2GAAgACgAML/r/+S/MTjZ8P/kvzFA2fD/5L8xShw1WnRxbE9Rc2lCc2xpVEZFVmFrZ2g0cnJFYWc9Wh4iHG45UWp0eVpJTzlMc3MrUWhIN1dvQWpYOFdVWT1lAAAAAMI+AmAFEq0BCBASqAEKHHJMWFFMTkdhNjU1clJVTjBweVlqRTh2Y3pDMD0SJGRkN2ViNTA4LWY0NjktNGU2Yy04YTQwLWRjNDZmYmJmYmNlZhgAIAIoAjD6zpaF/TI4nKqbiKAxQL3KloX9MkocbmE0aUlvQnVxZThLaENYK3lpUFl5dWFGNnRvPVofIh32V0hGVEtMdFAvVisvK0dBM3JTZkpvVFFid0hvPWX6kd7bwj4CYAUSjgEIAhKJAQocWWNTVG9udkVTUHdxQ3M0TDJjclZodjY4TDk4PRIkMDkwOGIwZDMtMzFjMy01NTczLThiN2QtYzVlNWI3MDdkYzY2GAAgACgAMMKsgZmEMTi1sYGZhDFAtbGBmYQxShxvUFZraHdCUmJWNjVLQ1dSMitJT05IV29PdTg9WgBlAAAAAMI+AmAAEq0BCA4SqAEKHGRHT0ZmN1RNMThPT0NyWUpBdnRXNjlkMVJwZz0SJDQ3MDQwM2ZlLWRlMzgtNDBhOC1hODk5LTQ0MGRkM2MzMmNhNBgAIAIoAjD5zpaF/TI44sSr358xQLrKloX9MkocSDV2TEIxeEN0REdIU1JSRGFLWlN3Mmt3M1hzPVofIh3bTDBITnZLVzdFSVFYVlp4WExGQlRKaS85Q3BvPWX9nIxKwj4CYAUwADgA",
+   "version": 1
+}

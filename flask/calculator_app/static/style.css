@@ -1,0 +1,124 @@
+/* === Base Setup === */
+body {
+    background-color: #121212;
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* === Theme Toggle Button === */
+.theme-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.theme-toggle button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 12px;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.theme-toggle button:hover {
+    background-color: #444;
+}
+
+/* === Calculator Box === */
+.calculator {
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 32px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+    width: 320px;
+    box-sizing: border-box;
+}
+
+/* === Display Screen === */
+.display {
+    background: black;
+    color: white;
+    font-size: 48px;
+    text-align: right;
+    padding: 24px;
+    border-radius: 16px;
+    border: none;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+/* === Button Grid === */
+form {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+/* === Common Button Styles === */
+button {
+    font-size: 20px;
+    padding: 20px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    background-color: #3a3a3a;
+    color: white;
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+/* === Operator Buttons === */
+button.operator,
+button.equal {
+    background-color: #f69906;
+    color: white;
+}
+
+/* === Span 2 column for zero === */
+button.zero {
+    grid-column: span 2;
+}
+
+/* === Light Mode Styling === */
+body.light {
+    background-color: #f4f4f4;
+    color: black;
+}
+
+body.light .calculator {
+    background: #ffffff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+body.light .display {
+    background: #f0f0f0;
+    color: black;
+}
+
+body.light button {
+    background-color: #e0e0e0;
+    color: black;
+}
+
+body.light button.operator,
+body.light button.equal {
+    background-color: #f69906;
+    color: white;
+}

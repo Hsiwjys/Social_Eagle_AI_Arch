@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dark/Light Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <!-- 🌗 Toggle Button -->
+    <div class="theme-toggle">
+        <button onclick="toggleTheme()">🌙 / ☀️ Toggle</button>
+    </div>
+
+    <div class="calculator">
+        <input type="text" id="display" class="display" value="{{ result or 0 }}" readonly>
+        <form method="POST">
+            <input type="hidden" name="expression" id="expression">
+            <input type="hidden" id="lastResult" value="{{ result }}">
+
+            <button type="button" onclick="clearDisplay()">AC</button>
+            <button type="button" onclick="append('')">±</button>
+            <button type="button" onclick="append('%')">%</button>
+            <button type="button" class="operator" onclick="append('÷')">÷</button>
+
+            <button type="button" onclick="append('7')">7</button>
+            <button type="button" onclick="append('8')">8</button>
+            <button type="button" onclick="append('9')">9</button>
+            <button type="button" class="operator" onclick="append('×')">×</button>
+
+            <button type="button" onclick="append('4')">4</button>
+            <button type="button" onclick="append('5')">5</button>
+            <button type="button" onclick="append('6')">6</button>
+            <button type="button" class="operator" onclick="append('−')">−</button>
+
+            <button type="button" onclick="append('1')">1</button>
+            <button type="button" onclick="append('2')">2</button>
+            <button type="button" onclick="append('3')">3</button>
+            <button type="button" class="operator" onclick="append('+')">+</button>
+
+            <button type="button" class="zero" onclick="append('0')">0</button>
+            <button type="button" onclick="append('.')">.</button>
+            <button type="submit" class="equal">=</button>
+        </form>
+    </div>
+
+    <script>
+    const expressionInput = document.getElementById("expression");
+    const display = document.getElementById("display");
+    const lastResultInput = document.getElementById("lastResult");
+
+    let justEvaluated = {{ 'true' if result else 'false' }};
+
+    const symbolMap = {
+        '×': '*',
+        '÷': '/',
+        '+': '+',
+        '−': '-',
+        '%': '%'
+    };
+
+    function append(value) {
+        const evalValue = symbolMap[value] || value;
+
+        if (justEvaluated) {
+            expressionInput.value = lastResultInput.value + evalValue;
+            display.value = lastResultInput.value + value;
+            justEvaluated = false;
+        } else {
+            expressionInput.value += evalValue;
+            display.value = (display.value === '0') ? value : display.value + value;
+        }
+    }
+
+    function clearDisplay() {
+        expressionInput.value = '';
+        display.value = '0';
+        justEvaluated = false;
+    }
+
+    // ✅ Theme Toggle + Persistence using localStorage
+    function toggleTheme() {
+        document.body.classList.toggle("light");
+        localStorage.setItem("theme", document.body.classList.contains("light") ? "light" : "dark");
+    }
+
+    // ✅ Load theme from localStorage
+    window.addEventListener("DOMContentLoaded", () => {
+        const savedTheme = localStorage.getItem("theme");
+        if (savedTheme === "light") {
+            document.body.classList.add("light");
+        }
+    });
+
+    // ✅ Keyboard Input Support
+    document.addEventListener("keydown", function (e) {
+        const key = e.key;
+
+        if (!isNaN(key) || key === "." || key === "%" || key === "+" || key === "-" || key === "*" || key === "/") {
+            append(key);
+        } else if (key === "Enter" || key === "=") {
+            document.querySelector("form").submit();
+        } else if (key === "Backspace") {
+            expressionInput.value = expressionInput.value.slice(0, -1);
+            display.value = display.value.slice(0, -1) || "0";
+        } else if (key.toLowerCase() === "c") {
+            clearDisplay();
+        }
+    });
+</script>
+
+</body>
+</html>
