@@ -1,30 +1,38 @@
-# BasicCalculator.py
+import streamlit as st
 
-def calculator():
-    print("Basic Calculator (+, -, *, /)")
+st.set_page_config(page_title="🧮 Basic Calculator", layout="centered")
+
+st.title("🧮 Basic Calculator")
+
+# Input fields
+num1 = st.text_input("Enter first number:")
+operator = st.selectbox("Choose operator", ['+', '-', '*', '/'])
+num2 = st.text_input("Enter second number:")
+
+# Button to calculate
+if st.button("Calculate"):
     try:
-        num1 = float(input("Enter first number: "))
-        operator = input("Enter operator (+, -, *, /): ")
-        num2 = float(input("Enter second number: "))
+        n1 = float(num1)
+        n2 = float(num2)
 
+        # Perform calculation
         if operator == '+':
-            result = num1 + num2
+            result = n1 + n2
         elif operator == '-':
-            result = num1 - num2
+            result = n1 - n2
         elif operator == '*':
-            result = num1 * num2
+            result = n1 * n2
         elif operator == '/':
-            if num2 != 0:
-                result = num1 / num2
+            if n2 != 0:
+                result = n1 / n2
             else:
-                print("❌ Error: Cannot divide by zero.")
-                return
+                st.error("❌ Error: Cannot divide by zero.")
+                result = None
         else:
-            print("❌ Invalid operator.")
-            return
+            st.error("❌ Invalid operator.")
+            result = None
 
-        print(f"✅ Result: {result}")
+        if result is not None:
+            st.success(f"✅ Result: **{result}**")
     except ValueError:
-        print("❌ Error: Please enter valid numbers.")
-
-calculator()
+        st.error("❌ Please enter valid numbers.")
