@@ -1,27 +1,53 @@
 import streamlit as st
+import re
 
-st.set_page_config(page_title="🛒 Shopping Bill Calculator", layout="centered")
+st.set_page_config(page_title="🔐 Password Strength Checker", layout="centered")
+st.title("🔐 Password Strength Checker")
 
-st.title("🛍️ Shopping Bill Calculator")
+# Password input
+password = st.text_input("Enter your password:", type="password")
 
-# Input number of items
-num_items = st.number_input("Enter number of items 🧾:", min_value=1, step=1)
+def check_strength(pwd):
+    strength = 0
+    remarks = []
 
-# Collect prices
-prices = []
-for i in range(num_items):
-    price = st.number_input(f"Price of item {i + 1} (₹):", min_value=0.0, format="%.2f", key=f"price_{i}")
-    prices.append(price)
+    if len(pwd) >= 8:
+        strength += 1
+    else:
+        remarks.append("Less than 8 characters")
 
-# Tax input
-tax_percent = st.number_input("Enter tax percentage (e.g., 5 for 5%):", min_value=0.0, format="%.2f")
+    if re.search(r"[a-z]", pwd):
+        strength += 1
+    else:
+        remarks.append("No lowercase letter")
 
-# Calculate button
-if st.button("Calculate Total"):
-    subtotal = sum(prices)
-    tax_amount = (tax_percent / 100) * subtotal
-    total = subtotal + tax_amount
+    if re.search(r"[A-Z]", pwd):
+        strength += 1
+    else:
+        remarks.append("No uppercase letter")
 
-    st.success(f"🛒 Subtotal: ₹{subtotal:.2f}")
-    st.info(f"🧾 Tax ({tax_percent}%): ₹{tax_amount:.2f}")
-    st.success(f"💰 Total Bill: ₹{total:.2f}")
+    if re.search(r"\d", pwd):
+        strength += 1
+    else:
+        remarks.append("No number")
+
+    if re.search(r"[!@#$%^&*(),.?\":{}|<>]", pwd):
+        strength += 1
+    else:
+        remarks.append("No special character")
+
+    if strength <= 2:
+        return "❌ Weak", remarks
+    elif strength == 3 or strength == 4:
+        return "⚠️ Medium", remarks
+    else:
+        return "✅ Strong", []
+
+# Strength Check
+if password:
+    strength_level, issues = check_strength(password)
+    st.subheader(f"Password Strength: {strength_level}")
+    if issues:
+        with st.expander("Suggestions to Improve"):
+            for issue in issues:
+                st.write(f"• {issue}")
