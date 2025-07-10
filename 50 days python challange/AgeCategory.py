@@ -1,4 +1,6 @@
-# AgeCategory.py
+import streamlit as st
+
+st.set_page_config(page_title="Age Category Checker", layout="centered")
 
 def age_category(age):
     if age < 0:
@@ -12,12 +14,21 @@ def age_category(age):
     else:
         return "Senior"
 
-def main():
-    try:
-        age = int(input("Enter age: "))
-        category = age_category(age)
-        print(f"✅ Age category: {category}")
-    except ValueError:
-        print("❌ Error: Please enter a valid number.")
+st.title("👶👦🧔👵 Age Category Checker")
 
-main()
+# Input field
+age_input = st.text_input("Enter your age:")
+
+if st.button("Check Category"):
+    if age_input:
+        try:
+            age = int(age_input)
+            category = age_category(age)
+            if category == "Invalid age":
+                st.warning("⚠️ Please enter a valid positive age.")
+            else:
+                st.success(f"✅ Age category: **{category}**")
+        except ValueError:
+            st.error("❌ Please enter a valid number.")
+    else:
+        st.info("ℹ️ Please enter your age above.")
