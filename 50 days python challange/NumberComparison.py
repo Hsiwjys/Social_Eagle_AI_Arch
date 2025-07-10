@@ -1,17 +1,24 @@
-# NumberComparison.py
+import streamlit as st
 
-def compare_numbers():
+st.set_page_config(page_title="🔢 Number Comparison", layout="centered")
+
+st.title("🔢 Compare Two Numbers")
+
+# User inputs
+num1 = st.text_input("Enter first number:")
+num2 = st.text_input("Enter second number:")
+
+# Compare button
+if st.button("Compare"):
     try:
-        num1 = float(input("Enter first number: "))
-        num2 = float(input("Enter second number: "))
+        n1 = float(num1)
+        n2 = float(num2)
 
-        if num1 > num2:
-            print(f"✅ {num1} is greater than {num2}")
-        elif num1 < num2:
-            print(f"✅ {num1} is less than {num2}")
+        if n1 > n2:
+            st.success(f"✅ {n1} is greater than {n2}")
+        elif n1 < n2:
+            st.success(f"✅ {n1} is less than {n2}")
         else:
-            print("✅ Both numbers are equal")
+            st.info("✅ Both numbers are equal")
     except ValueError:
-        print("❌ Please enter valid numbers.")
-
-compare_numbers()
+        st.error("❌ Please enter valid numeric values.")
